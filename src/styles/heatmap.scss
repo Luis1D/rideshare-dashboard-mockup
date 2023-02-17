@@ -1,0 +1,11 @@
+@import 'variables';
+
+#Heatmap {
+    h2 {
+        font-size: 1rem;
+    }
+    grid-column-start: span 3;
+    @media(max-width: 600px) {
+        grid-column-start: 1;
+    }
+}

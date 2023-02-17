@@ -1,0 +1,32 @@
+@import 'variables';
+
+#Stats {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    @media(max-width: 1050px) {
+        grid-row-start: 3;
+        grid-column-start: span 3;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ul:first-child {
+        margin-right: 1rem;
+    }
+    li {
+        padding: .25rem 0;
+        width: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: .9rem;
+        span {
+            font-weight: 600;
+        }
+    }
+}

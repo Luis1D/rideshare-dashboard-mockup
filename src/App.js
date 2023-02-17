@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/index.scss';
+import DesktopNavigation from './components/DesktopNavigation';
+import MobileNavigation from './components/MobileNavigation';
+import Earnings from './components/Earnings';
+import Expenses from './components/Expenses';
+import Stats from './components/Stats';
+import DateSearch from './components/DateSearch';
+import RevenueChart from './components/RevenueChart';
+import Feed from './components/Feed';
+import UserCard from './components/UserCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DesktopNavigation />
+      <MobileNavigation />
+      <div id="home-grid">
+        <h1 className="greeting">Good morning, Luis!</h1>
+        <UserCard />
+        <Feed />
+        <DateSearch />
+        <div className="flex">
+          <Earnings />
+          <Expenses />
+        </div>
+        <Stats />
+        <RevenueChart />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,53 @@
+@import 'variables';
+
+#EarningsActivity {
+    .filters {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1rem 0;
+        span {
+            color: $White;
+            background-color: $Black;
+            padding: .25rem 1rem;
+            border-radius: .65rem;
+            font-size: .9rem;
+        }
+    }
+    .date {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    hr {
+        margin: 1rem 0;
+    }
+    .earnings-feed {
+        font-size: .9rem;
+        .feed-item {
+            margin-bottom: 1.5rem;
+        }
+        .price-time-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: .5rem;
+            span:first-child {
+                font-weight: 600;
+            }
+        }
+        .trip-location {
+            margin-top: .25rem;
+            span {
+                font-size: .7rem;
+            }
+            .circle {
+                margin-right: .5rem;
+                display: inline-block;
+                width: .25rem;
+                height: .25rem;
+                border: .15rem solid $Grey;
+                border-radius: 10rem;
+            }
+        }
+    }
+}

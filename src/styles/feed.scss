@@ -1,0 +1,19 @@
+@import 'variables';
+
+#Feed {
+    grid-row-start: span 3;
+    grid-column-start: 4;
+    height: 80vh;
+    overflow: scroll;
+    max-width: 20rem;
+    @media(max-width: 600px) {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        max-width: 100%;
+        height: 100vh;
+        padding-bottom: 5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}

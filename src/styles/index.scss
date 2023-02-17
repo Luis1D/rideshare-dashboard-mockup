@@ -1,0 +1,61 @@
+@import 'navigation';
+@import 'variables';
+@import 'earnings';
+@import 'dateSearch';
+@import 'revenue';
+@import 'heatmap';
+@import 'feed';
+@import 'earningsActivity';
+@import 'userCard';
+@import 'stats';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: $White;
+  font-family: $Roboto;
+}
+li {
+  list-style: none;
+}
+.App {
+  width: 98%;
+  margin: 0 auto;
+  @media(max-width: 600px) {
+    width: 100%;
+  }
+}
+#home-grid {
+  margin-left: 6rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: .75fr .75fr .75fr 1fr;
+  grid-template-rows: .15fr .15fr 1fr 1fr;
+  @media(max-width: 1050px) {
+    grid-template-rows: .15fr .15fr .35fr 1fr;
+}
+  @media(max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4% 10% 10% 20% 50%;
+    grid-column-gap: 0;
+    grid-row-gap: 1.5rem;
+    margin: 0;
+  }
+}
+.greeting {
+  font-size: 1.5rem;
+  grid-column-start: span 2;
+  grid-row-start: 1;
+  @media(max-width: 600px) {
+    display: none;
+  }
+}
+.card {
+  box-shadow: .25rem .25rem .5rem 0rem rgba(0, 0, 0, 0.203);
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
